@@ -1,0 +1,35 @@
+<div class="container">
+    <div class="search-container">
+      <input id="search" [(ngModel)]="searchTerm" (input)="filterComplaints()" placeholder="Search by Application Name" class="form-control">
+    </div>
+  
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Customer Name</th>
+          <th>Application Name</th>
+          <th>Service Name</th>
+          <th>Branch Name</th>
+          <th>Timestamp</th>
+          <th>Status</th>
+          <th>Description</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let complaint of filteredComplaints">
+          <td>{{ complaint.id }}</td>
+          <td>{{ complaint.customer?.name }}</td>
+          <td>{{ complaint.application?.applicationName }}</td>
+          <td>{{ complaint.service?.serviceName }}</td>
+          <td>{{ complaint.branch?.branchName }}</td>
+          <td>{{ complaint.timestamp | date: 'yyyy-MM-dd HH:mm:ss' }}</td>
+          <td>{{ complaint.status }}</td>
+          <td>{{ complaint.description }}</td>
+         
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

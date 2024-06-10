@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Login</h1>
+  <form (ngSubmit)="onSubmit()">
+    <label for="email"><b>Email</b></label>
+    <input type="text" class="form-control" name="Email" [(ngModel)]="Email" required>
+
+    <label for="password"><b>Password</b></label>
+    <input type="password" class="form-control" name="Password" [(ngModel)]="Password" required>
+
+    <p>To create an account <a href="http://localhost:4200/signup" style="color:dodgerblue">Sign up</a>.</p>
+
+    <div class="clearfix">
+      <button type="submit" class="btn">Login</button>
+    </div>
+  </form>
+</div>

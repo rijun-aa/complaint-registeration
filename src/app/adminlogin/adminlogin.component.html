@@ -1,0 +1,16 @@
+<!-- src/app/adminlogin/adminlogin.component.html -->
+<div class="login-container">
+    <h2>Admin Login</h2>
+    <form (ngSubmit)="onSubmit()" #loginForm="ngForm">
+      <div class="form-group">
+        <label for="username">Username</label>
+        <input type="text" name="Username" class="form-control" [(ngModel)]="Username" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" name="Password" class="form-control" [(ngModel)]="Password" required />
+      </div>
+      <button type="submit" class="btn btn-primary" [disabled]="!loginForm.form.valid">Login</button>
+    </form>
+  </div>
+  

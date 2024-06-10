@@ -1,0 +1,90 @@
+/* Center the search container with card styling */
+.search-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.search-card {
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  text-align: center;
+}
+
+/* Styles for the search input field */
+#search {
+  padding: 10px;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+/* Styles for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 16px;
+  text-align: left;
+  color: #333;
+}
+
+/* Styles for the table headers and cells */
+th, td {
+  padding: 12px 15px;
+}
+
+th {
+  background-color: #0eb7f4;
+  color: white;
+  text-transform: uppercase;
+}
+
+tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+/* Styles for even rows */
+tr:nth-of-type(even) {
+  background-color: #f7f7f7;
+}
+
+/* Styles for the last row */
+tr:last-of-type {
+  border-bottom: 2px solid #0eb7f4;
+}
+
+/* Hover effect for table rows */
+tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styles for the action button */
+button {
+  padding: 10px 15px;
+  background-color: #0eb7f4;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0a95c7;
+}
+.notification-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+}
+
